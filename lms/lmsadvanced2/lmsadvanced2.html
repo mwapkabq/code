@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>My LMS</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Assignments</a></li>
+          <li><a href="#">Grades</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="dashboard">
+        <h2>Welcome to My LMS</h2>
+        <p>Get started by selecting a course or assignment</p>
+      </section>
+      <section id="courses" class="hidden">
+        <h2>Courses</h2>
+        <ul id="courses-list">
+          <li>
+            <a href="#">
+              <h3>Introduction to Computer Science</h3>
+              <p>An introduction to programming and computer science</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Data Structures and Algorithms</h3>
+              <p>A course on common data structures and algorithms</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="assignments" class="hidden">
+        <h2>Assignments</h2>
+        <ul id="assignments-list">
+          <li>
+            <a href="#">
+              <h3>Assignment 1</h3>
+              <p>Write a program that computes the nth Fibonacci number</p>
+              <p class="due-date">Due: October 1, 2022</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Assignment 2</h3>
+              <p>Implement a hash table</p>
+              <p class="due-date">Due: October 15, 2022</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="grades" class="hidden">
+        <h2>Grades</h2>
+        <table id="grades-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Assignment</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Introduction to Computer Science</td>
+              <td>Assignment 1</td>
+              <td>90%</td>
+            </tr>
+            <tr>
+              <td>Introduction to Computer Science</td>
+              <td>Assignment 2</td>
+              <td>85%</td>
+            </tr>
+            <tr>
+              <td>Data Structures and Algorithms</td>
+              <td>Assignment 1</td>
+              <td>92%</td>
+            </tr>
+            <tr>
+              <td>Data Structures and Algorithms</td>
+              <td>Assignment 2</td>
+              <td>88%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; My LMS 2022</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

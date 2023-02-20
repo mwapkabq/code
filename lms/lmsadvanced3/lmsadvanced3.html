@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Learning Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>My Learning Management System</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Assignments</a></li>
+				<li><a href="#">Grades</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="courses">
+			<h2>Courses</h2>
+			<button id="add-course-button">Add Course</button>
+			<table id="courses-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Course Name</th>
+						<th>Instructor</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="courses-list">
+					<!-- Courses will be dynamically added here -->
+				</tbody>
+			</table>
+		</section>
+		<section id="assignments" class="hidden">
+			<h2>Assignments</h2>
+			<button id="add-assignment-button">Add Assignment</button>
+			<table id="assignments-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Course</th>
+						<th>Title</th>
+						<th>Description</th>
+						<th>Due Date</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="assignments-list">
+					<!-- Assignments will be dynamically added here -->
+				</tbody>
+			</table>
+		</section>
+		<section id="assignment-submission" class="hidden">
+			<h2>Submit Assignment</h2>
+			<form id="assignment-submission-form">
+				<label for="assignment-title">Assignment Title:</label>
+				<input type="text" id="assignment-title" name="assignment-title" disabled>
+				<label for="assignment-description">Assignment Description:</label>
+				<textarea id="assignment-description" name="assignment-description" disabled></textarea>
+				<label for="assignment-due-date">Due Date:</label>
+				<input type="text" id="assignment-due-date" name="assignment-due-date" disabled>
+				<label for="assignment-file">File:</label>
+				<input type="file" id="assignment-file" name="assignment-file">
+				<button type="submit">Submit Assignment</button>
+			</form>
+		</section>
+		<section id="grades" class="hidden">
+			<h2>Grades</h2>
+			<table id="grades-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Course</th>
+						<th>Assignment</th>
+						<th>Grade</th>
+					</tr>
+				</thead>
+				<tbody id="grades-list">
+					<!-- Grades will be dynamically added here -->
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; My Learning Management System - All rights reserved</p>
